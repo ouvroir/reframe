@@ -35,16 +35,15 @@
 </script>
 
 <div class="{`rf-row ${classes}`}" use:setup style="{style}">
-  <slot containerName="RowGrid" />
+  <slot containerName="RowFlex" />
 </div>
 
 <style>
   .rf-row {
-    margin: 3rem 0;
+    margin: 1rem 0;
     align-items: start;
-    display: grid;
-    grid-auto-rows: auto;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     row-gap: 1.5rem;
   }
 </style>

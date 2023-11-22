@@ -1,5 +1,4 @@
 
-
 // Does not contain rotation ie. 3:4
 // Ref wikipédia https://en.wikipedia.org/wiki/Aspect_ratio_(image)
 const ratioList = [

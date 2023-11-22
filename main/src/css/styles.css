@@ -60,13 +60,23 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   margin-bottom: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+*+h2 {
+  margin: 2rem 0;
 }
 
 p {
   line-height: 1.5rem;
 }
 
-p+p {
+p+* {
   margin-top: 1rem;
 }
 
