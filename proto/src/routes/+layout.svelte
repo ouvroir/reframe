@@ -1,6 +1,7 @@
 <script lang="ts">
-	import '../lib/css/reset.css';
-	import '../lib/css/styles.css';
+	import '$lib/css/reset.css';
+	import '$lib/css/styles.css';
+	import '$lib/css/reframe.css';
 
 	let innerWidth: number;
 	let innerHeight: number;

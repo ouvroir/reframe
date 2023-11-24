@@ -7,8 +7,14 @@
 	let {
 		maxHeight = '',
 		columnGap = '1rem',
+		position = 'static',
 		classes = ''
-	} = $props<{ maxHeight?: string; columnGap?: string; classes?: string }>();
+	} = $props<{
+		maxHeight?: string;
+		columnGap?: string;
+		classes?: string;
+		position?: 'static' | 'sticky';
+	}>();
 
 	const setup = (container: HTMLElement) => {
 		const images = container.querySelectorAll('img');
@@ -34,7 +40,7 @@
 	let style = $derived(`${maxHeightStyle} ${gapStyle}`);
 </script>
 
-<div class={`rf-row ${classes}`} use:setup {style}>
+<div class={`rf-row ${classes} ${position !== 'static' ? position : ''}`} use:setup {style}>
 	<slot containerName="RowGrid" />
 </div>
 
@@ -44,7 +50,7 @@
 		align-items: start;
 		display: grid;
 		grid-auto-rows: auto;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 		row-gap: 1.5rem;
 	}
 </style>

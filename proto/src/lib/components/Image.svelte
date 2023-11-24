@@ -22,7 +22,7 @@
 		captionStyle?: 'fixed' | 'hover';
 		minWidth?: string;
 		containerName?: string;
-		position?: 'block' | 'float' | 'sticky-left' | 'sticky-right';
+		position?: 'block' | 'float' | 'sticky';
 	}>();
 
 	let containerWidth: number;
@@ -118,11 +118,5 @@
 		float: right;
 		width: 50%;
 		margin-left: 1rem;
-	}
-
-	.sticky-left {
-		position: sticky;
-		content: '';
-		top: 1rem;
 	}
 </style>

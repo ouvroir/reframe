@@ -7,8 +7,9 @@
 
 <style>
 	.rf-scroll {
+		margin: 2rem 0;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 		gap: 1.5rem;
 	}
 </style>

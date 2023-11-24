@@ -17,6 +17,7 @@
 main {
   padding-top: 3rem;
   padding-bottom: 5rem;
+  padding: 3rem 1rem 5rem 1rem;
 }
 
 .content-grid {
