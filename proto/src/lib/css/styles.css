@@ -65,20 +65,19 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  margin-top: 1rem;
+  margin: 3rem 0;
 }
 
-*+h2 {
-  margin: 2rem 0;
-}
+
 
 p {
   line-height: 1.5rem;
 }
 
 p+* {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
+
 
 
 @media (prefers-color-scheme: light) {
