@@ -130,9 +130,10 @@ Reframe doit rester simple d'utilisation et être efficace.
 
 
 Liens anciens c-r : 
-https://ouvroir.umontreal.ca/actualites/reunion/crOuvroir2023-11-13
-https://ouvroir.umontreal.ca/actualites/reunion/crOuvroir2023-11-08
-https://ouvroir.umontreal.ca/actualites/reunion/crOuvroir2023-11-29
+
+- https://ouvroir.umontreal.ca/actualites/reunion/crOuvroir2023-11-08
+- https://ouvroir.umontreal.ca/actualites/reunion/crOuvroir2023-11-13
+- sshttps://ouvroir.umontreal.ca/actualites/reunion/crOuvroir2023-11-29
 
 
 ## Conclusion
