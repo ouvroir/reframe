@@ -1,6 +1,7 @@
 # Quelques notes à propos de ce prototype
 
 auteur : William Diakité, Ouvroir
+
 date de dev : novembre 2023
 
 
