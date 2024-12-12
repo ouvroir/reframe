@@ -1,15 +1,21 @@
-# Reframe, Librairie JavaScript pour la présentation des contenus visuels 
+# Quelques notes à propos de ce prototype
 
-Le partenariat explore notamment les possibilités muséographiques offertes par la publication sur le web pour documenter des accrochages de collections, la biographie de certains objets (axe 1) et la documentation d’œuvres performatives qui exploitent leurs archives (axe 3). Quant à l’Encyclopédie numérique elle fera largement appel à une riche illustration que nous souhaitons déployer de manière interactive. Faute de bibliothèque de code informatique générique libre et open source destinée à la présentation de contenus patrimoniaux, la création d’expositions en ligne fait le plus souvent l’objet de développements spécifiques et ponctuels. Partant du travail de la recension et de la typologie des pratiques sur les nouveaux usages des collections réalisés par la cellule numérique (axe 4), nous nous proposons de développer un outil destiné à pouvoir déployer facilement des écritures numériques à partir d’une documentation muséale et visuelle. Celui-ci sera mobilisé pour les expérimentations de publications de contenus spécifiques prévues dans l’axe 1,l’axe 2 et 3 ainsi que pour l’illustration de l’Encyclopédie multimédia.
+auteur : William Diakité, Ouvroir
 
-Cette application prend la forme d’une bibliothèque de code informatique libre et open source développée en ECMAScript6 (“vanilla” JavaScript) afin de faciliter sa maintenance et sa pérennité. Ce noyau logiciel est destiné à faciliter la production d’exposition numériques et l’exploitation des collections sur le web en définissant des modèles responsive design pour la création de ressources ou de galeries, avec une diversité d’interactions utilisateurs spécifiques à la présentation savante de la documentation visuelle sur le web (comparaison d’images, feuilletage, zoom, légendes structurées et accès aux métadonnées). Son périmètre fonctionnel intègre une compatibilité avec les différents protocoles du cadre international d’interopérabilité sur les images IIIF (https://iiif.io). Lorsque c’est possible, les développements s’appuient sur l’intégration de composants JavaScript libres et open source disponibles (OpenSeedragon https://openseadragon.github.io, Mirador, etc.).
+date de dev : novembre 2023
 
-_Reframe est conçu par le laboratoire dans le cadre du Partenariat Des nouveaux usages des collections dans les musées d’art. Maîtrise d’ouvrage : Lena Krause. Direction scientifique : Emmanuel Chateau-Dutier._
 
-# Reframe
+## setup
+La beta de svelte 5 a été utilisée pour réaliser cette application. Prévoir des conflits de dépendances. Ce n'est pas optimal mais ça fonctionne, pour les tests je recommande simplement : 
 
-The CIÉCO’s partnership explores the museographic possibilities offered by web publishing to document collection displays, the biography of certain objects (axis 1) and the documentation of performative works that exploit their archives (axis 3). As for the Digital Encyclopedia, it will make extensive use of a rich illustration that we hope to deploy interactively. In the absence of a free and open source generic library intended for the presentation of heritage content, the creation of online exhibitions is most often the subject of specific and punctual developments. Based on the survey and typology of practices on new uses of collections carried out by the digital unit of the project (axis 4), we propose to develop a tool designed to easily deploy digital writings based on museum and visual documentation. This tool will be used for the experiments of specific content publications planned in axis 1, axis 2 and 3 as well as for the illustration of the Multimedia Encyclopedia.
+`npm i --force`
 
-This application takes the form of a free and open source code library developed in ECMAScript6 (“vanilla” JavaScript) in order to facilitate its maintenance and durability. This software core is intended to facilitate the production of digital exhibitions and the exploitation of collections on the web by defining responsive design templates for the creation of resources or galleries, with a diversity of user interactions specific to the scholarly presentation of visual documentation on the web (image comparison, browsing, zooming, structured captions and access to metadata). Its functional scope integrates compatibility with the various protocols of the International Image Interoperability Framework (IIIF) (https://iiif.io). Whenever possible, developments are based on the integration of available free and open source JavaScript components (OpenSeedragon https://openseadragon.github.io, Mirador, etc.).
+À prévoir également, beaucoup d'erreurs de linting liées en grande partie au développement de svelte 5 depuis 1 an.
 
-_Reframe is designed by the laboratory in the framework of the Partnership New uses of collections in art museums. Project manager: Lena Krause. Scientific director: Emmanuel Chateau-Dutier._
+## notes sur le proto
+
+Vous verrez que je n'utilise pas le protocole IIIF, ni de visionneuse IIIF ou  de custom elements. 
+
+Le but était principalement de tester quelques aspects de la librairie notamment les questions de ratio et leur implication sur les layouts (flex ou grid) ou bien l'interface des composants (on s'entend, svelte ou custom elements, des attributs restent des attributs). Sur ce dernier point, le but était de voir quelle quantité est nécessaire pour paramétrer des éléments basique (disposition de la légende, sens du flex ou autre).
+
+Enfin, noter que ceci est prototype *quick and dirty* et n'a rien d'abouti ou de définitif. Au contraire, c'est le travail sur ce prototype qui m'a donné des éléments de réfléxion pour entamer l'écriture du cahier des charges.
