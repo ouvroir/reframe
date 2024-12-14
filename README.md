@@ -9,6 +9,7 @@ date de dev : novembre 2023
 La beta de svelte 5 a été utilisée pour réaliser cette application. Prévoir des conflits de dépendances. Ce n'est pas optimal mais ça fonctionne, pour les tests je recommande simplement : 
 
 `npm i --force`
+`npm run dev`
 
 À prévoir également, beaucoup d'erreurs de linting liées en grande partie au développement de svelte 5 depuis 1 an.
 
